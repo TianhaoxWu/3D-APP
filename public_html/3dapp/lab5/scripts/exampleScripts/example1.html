@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>JavaScript Swap Page Contents Function</title>
+    <!-- JavaScript document.getElementById(parameter) where parameter is usually a div tag ID -->
+    <script type="text/javascript">
+        var counter = 0;
+
+        function swap(selected) {
+            // 首先隐藏所有的 div 内容
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('coke').style.display = 'none';
+            document.getElementById('sprite').style.display = 'none';
+            document.getElementById('pepper').style.display = 'none';
+
+            // 显示选中的 div 内容
+            document.getElementById(selected).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <!-- 导航菜单 -->
+    <p>
+        <a href="javascript:swap('home')">Home</a> |
+        <a href="javascript:swap('coke')">Coca Cola</a> |
+        <a href="javascript:swap('sprite')">Sprite</a> |
+        <a href="javascript:swap('pepper')">Dr Pepper</a>
+    </p>
+
+    <!-- 页面内容，每个内容在一个容器 div 中 
+         初始状态下，home 页面会显示，直到点击其他导航菜单链接
+         然后 JavaScript swap 函数将处理 'selected' 内容，
+         首先确保所有页面内容不显示，然后显示选中的内容作为块元素 -->
+    <div id="home"><b>Home:</b> Welcome to my basic 3D App.</div>
+    <div id="coke" style="display:none;"><b>Coca Cola:</b> Check out my Coke 3D model.</div>
+    <div id="sprite" style="display:none;"><b>Sprite:</b> Check out my Sprite 3D model.</div>
+    <div id="pepper" style="display:none;"><b>Dr Pepper:</b> Check out my Dr Pepper 3D model.</div>
+</body>
+</html>

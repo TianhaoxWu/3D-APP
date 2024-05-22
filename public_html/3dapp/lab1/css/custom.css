@@ -1,0 +1,161 @@
+/* Custom Fonts */
+@font-face {
+    font-family: 'cocaColaFont';
+    src: url('../assets/fonts/loki_cola/LOKICOLA.TTF');
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald/static/Oswald-Regular.ttf');
+}
+
+/* Body and Defaults */
+body {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    background-color: rgba(182, 231, 243, 1.0);
+}
+
+/* Text Styles */
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'cocaColaFont';
+}
+
+/* Navbar Styles */
+.navbar_coca_cola {
+    background-color: #760003; /* Set navbar background color */
+    min-height: 70px;
+}
+
+.navbar_coca_cola .navbar-brand {
+    color: rgb(245, 235, 235);
+}
+
+.navbar_coca_cola .navbar-brand:hover {
+    color: green;
+}
+
+.navbar_coca_cola .navbar-nav > li > a {
+    min-height: 70px;
+    color: white;
+}
+
+.navbar_coca_cola .navbar-nav > li > a:hover,
+.navbar_coca_cola .navbar-nav > li > a:focus {
+    color: green;
+}
+
+/* Image Styles */
+#main_3d_image {
+    background-image: url('../assets/images/main_3D.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px; /* Ensures the image is visible */
+}
+
+/* Main Text Styles */
+#main_text {
+    float: left;
+    margin: 5%;
+    width: 90%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#main_text h2 {
+    color: rgba(0, 102, 153, 1);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#main_text h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#main_text p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(182, 231, 243, 1.0);
+}
+
+/* Logo Styles */
+.logo {
+    margin-top: 3px;
+}
+
+.logo h1, .logo h2 {
+    font-family: 'cocaColaFont';
+    font-size: 31px;
+    margin-top: 0px;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+}
+
+.logo h3 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.logo p {
+    font-size: 7px;
+    margin-top: 22px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 3px;
+}
+
+/* Footer Styles */
+.footer {
+    color: #030303;
+    background-color: #760003; /* Set navbar footer background color same as header */
+    height: 70px;
+}
+
+/* Media Query for Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .footer {
+        background-color: #eb0025;
+        height: 70px;
+    }
+
+    .navbar-text > p {
+        color: rgb(228, 75, 15);
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+}
